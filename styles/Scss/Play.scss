@@ -1,0 +1,207 @@
+.play {
+    // height: 820px;
+    margin-top: 70px;
+    background-color: #000;
+    padding-bottom: 70px;
+
+    .section_container {
+
+        .container_text {
+            .play_container-label {
+                margin-top: 15px;
+                display: flex;
+                align-items: flex-end;
+
+                .play_label {
+                    margin-bottom: 14px;
+                    margin-left: 32px;
+                    color: #fff;
+                }
+            }
+
+            .play_paragraph {
+                margin-top: 25px;
+                color: #fff;
+                width: 75%;
+            }
+        }
+
+        .play_form {
+            width: 36%;
+            display: inline-block;
+
+            .form_input {
+                background-color: #000;
+                border: 0px;
+                border-bottom: 1px solid #777;
+                padding-bottom: 13px;
+                color: #fff;
+                font-family: 'RobotoReg';
+                font-size: 18px;
+                margin-top: 35px;
+                width: 100%;
+
+                &:first-child {
+                    margin-top: 98px;
+                }
+            }
+
+            .form_input-file {
+                margin-top: 35px;
+                text-align: center;
+                padding: 39px 0;
+                box-sizing: border-box;
+                border: 1px dashed #777;
+                width: 100%;
+                height: 120px;
+                color: #fff;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .input_label {
+                    font-family: 'RobotoReg';
+                    font-size: 18px;
+                    text-decoration: underline;
+                }
+
+                .input_paragraph {
+                    margin-top: 7px;
+                    font-size: 12px;
+                }
+            }
+
+            .form_button {
+                margin-top: 32px;
+                background: #F8F200;
+                height: 59px;
+                width: 192px;
+                padding: 15px 50px;
+                box-sizing: border-box;
+                color: #000;
+                font-family: "RobotoBold";
+                font-size: 18px;
+                border: #F8F200;
+            }
+
+            .form_checkbox {
+                display: flex;
+                margin-top: 15px;
+
+                .checkbox_input {
+                    width: 14px;
+                    height: 14px;
+                    background-color: #000;
+                    border: 1px solid #fff;
+                    box-sizing: border-box;
+                }
+
+                .checkbox_label {
+                    margin-left: 10px;
+                    color: #fff;
+                    font-family: 'RobotoReg';
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .container_images {
+            width: 61.5%;
+            margin-top: 70px;
+            float: right;
+
+            .image {
+                width: 100%;
+            }
+
+            &:first-child {
+                margin-left: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .play {
+        .section_container {
+            position: relative;
+
+            .play_form {
+                display: block;
+            }
+
+            .container_text {
+                float: left;
+                width: 45%;
+
+                .play_container-label {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .play_label {
+                        margin-left: 0;
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            .container_images {
+                position: absolute;
+                top: 95px;
+                right: 0;
+                width: 48.15%;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 562px) {
+    .play {
+        .section_container {
+            .play_form {
+                width: 100%;
+            }
+
+            .container_text {
+                float: none;
+                width: 100%;
+
+                .play_container-label {
+
+                    .play_image {
+                        width: 62px;
+                    }
+
+                    .play_label {
+                        margin-top: 250px;
+                    }
+                }
+            }
+
+            .container_images {
+                position: absolute;
+                top: 55px;
+                right: 3.75%;
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    .play {
+        .section_container {
+            .container_text {
+                .play_container-label {
+                    .play_label {
+                        margin-top: 150px;
+                    }
+                }
+            }
+        }
+    }
+}

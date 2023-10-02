@@ -1,0 +1,122 @@
+.monitor {
+    background-color: #F8F200;
+    padding-bottom: 70px;
+
+    .monitor_container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+
+        .container-left {
+            width: 48.75%;
+
+            .container_image {
+                width: 100%;
+            }
+
+            .container_flex {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+
+        .container-right {
+            width: 48.75%;
+
+            .container_paragraph {
+                margin-top: 25px;
+            }
+
+            .conainer_list {
+                margin-top: 10px;
+
+                .list_item {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 15px;
+
+                    .item_paragraph {
+                        margin-left: 10px;
+                    }
+
+                    .item_image {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+    .monitor .monitor_container .container-left .container_flex {
+        flex-direction: column;
+
+        img {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .monitor {
+        .monitor_container {
+            .container-left {
+                width: 48.75%;
+
+                .container_image {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 762px) {
+    .monitor {
+        .monitor_container {
+            flex-direction: column;
+
+            .container-left {
+                width: 100%;
+
+                .container_flex {
+                    flex-direction: row;
+
+                    .flex_image-hp {
+                        width: 43.852px;
+                    }
+
+                    .flex_image-cross {
+                        width: 49.333px;
+                    }
+
+                    .flex_image-logo {
+                        width: 175.407px;
+                    }
+                }
+
+                .container_image {
+                    width: 100%;
+                    margin-top: 25px;
+                }
+            }
+
+            .container-right {
+                width: 100%;
+                margin-top: 40px;
+
+                .conainer_list {
+                    .list_item {
+                        .item_image {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

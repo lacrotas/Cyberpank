@@ -4,6 +4,7 @@
     justify-content: space-around;
     align-items: center;
     position: absolute;
+    z-index: 10;
     top: 20px;
     left: 0;
     height: 74px;
@@ -12,6 +13,11 @@
         width: 30px;
         height: 30px;
         margin-left: 40px;
+        transition: all 1s ease;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
         &:first-child{
             margin-left: 0;
         }

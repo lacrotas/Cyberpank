@@ -58,6 +58,7 @@
 
                 &:hover {
                     cursor: pointer;
+                    border: solid;
                 }
 
                 .input_label {
@@ -83,6 +84,10 @@
                 font-family: "RobotoBold";
                 font-size: 18px;
                 border: #F8F200;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
 
             .form_checkbox {
